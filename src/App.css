@@ -9,4 +9,8 @@
 
 body {
     font-family: "Swiss911", sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
 }
