@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../assets/logo.png";
 
 const Navbar: React.FC = () => {
-  const [selectedPage, setSelectedPage] = useState("About");
+  const [selectedPage, setSelectedPage] = useState("Home");
   const [hoveredPage, setHoveredPage] = useState("");
 
   const handleLinkClick = (page: string) => {
@@ -28,24 +28,24 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-row bg-transparent">
+    <div className="flex flex-row bg-background shadow-md fixed w-full z-50">
       <div className="w-16 ml-20 mt-3">
         <img src={Logo} />
       </div>
       <div className="flex w-5/6 flex-row justify-center">
         <div className="flex justify-between content-between w-96 mt-6">
           <a
-            href="#"
+            href="#home"
             // className="nav-pages font-semibold text-darkpurple text-xl"
-            onMouseEnter={() => handleMouseEnter("About")}
+            onMouseEnter={() => handleMouseEnter("Home")}
             onMouseLeave={() => handleMouseLeave()}
-            className={`${pageStyle("About")}`}
-            onClick={() => handleLinkClick("About")}
+            className={`${pageStyle("Home")}`}
+            onClick={() => handleLinkClick("Home")}
           >
-            About
+            Home
           </a>
           <a
-            href="#"
+            href="#skills"
             // className="nav-pages font-semibold text-darkpurple text-xl"
             onMouseEnter={() => handleMouseEnter("Skills")}
             onMouseLeave={() => handleMouseLeave()}
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
             Skills
           </a>
           <a
-            href="#"
+            href="#projects"
             // className="font-semibold text-greypurple text-xl hover:text-darkpurple"
             onMouseEnter={() => handleMouseEnter("Projects")}
             onMouseLeave={() => handleMouseLeave()}
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
             Projects
           </a>
           <a
-            href="#"
+            href="#contact"
             // className="font-semibold text-greypurple text-xl hover:text-darkpurple"
             onMouseEnter={() => handleMouseEnter("Contact")}
             onMouseLeave={() => handleMouseLeave()}

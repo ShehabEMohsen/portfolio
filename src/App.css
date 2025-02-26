@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Swiss911";
+    src: url("/fonts/Swiss911.woff2") format("woff2"),
+         url("/fonts/Swiss911.woff") format("woff"),
+         url("/fonts/Swiss911.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Swiss911", sans-serif;
+}

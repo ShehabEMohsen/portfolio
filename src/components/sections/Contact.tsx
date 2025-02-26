@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col pb-12 h-screen justify-center">
+    <div className="flex flex-col pb-12 h-screen justify-center w-full">
       <div className="w-full h-96 bg-[#d6c9e7]">
         <div>
           <div className="flex flex-row justify-between">

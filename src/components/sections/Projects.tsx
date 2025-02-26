@@ -4,7 +4,7 @@ import Suitcase from "../../assets/suitcase.png";
 
 const Projects: React.FC = () => {
   return (
-    <div className="flex flex-col items-center pb-12 h-screen">
+    <div className="flex flex-col items-center pb-12 h-screen w-full">
       <div className="w-full flex justify-center font-bold text-5xl text-darkpurple mt-16 mb-12">
         My Projects
       </div>

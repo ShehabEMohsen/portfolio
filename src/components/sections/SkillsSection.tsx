@@ -10,14 +10,15 @@ import Figma from "../../assets/figma.svg";
 import Vue from "../../assets/vue.svg";
 import Next from "../../assets/Next.js.svg";
 import Tailwind from "../../assets/Tailwind CSS.svg";
+import FadeInSection from "../parts/FadeInSection";
 
 const SkillsSection: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center text-center h-screen w-full">
       <div className="w-full flex justify-center font-bold text-5xl text-darkpurple mt-16">
         My Skills
       </div>
-      <div className="grid grid-cols-4 mt-6 w-3/4">
+      <div className="grid grid-cols-4 mt-6">
         <Skills photo={HTMLCSS} name={"HTML & CSS"} />
         <Skills photo={Vue} name={"Vue"} />
         <Skills photo={ReactImg} name={"React"} />
