@@ -36,6 +36,15 @@
     visibility: visible;
 }
 
+.tooltip.shown{
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
 
 @keyframes slideIn{
     from{
