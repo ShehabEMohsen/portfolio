@@ -1,6 +1,8 @@
 import React from "react";
 import "./sections.css";
 import Suitcase from "../../assets/suitcase.png";
+import { projects } from "../data/projects";
+import { Link } from "react-router-dom";
 
 const Projects: React.FC = () => {
   return (
@@ -8,7 +10,7 @@ const Projects: React.FC = () => {
       <div className="w-full flex justify-center font-bold text-5xl text-darkpurple mt-16 mb-12">
         My Projects
       </div>
-      <div className="grid grid-cols-2 gap-5 items-center justify-center">
+      {/* <div className="grid grid-cols-2 gap-5 items-center justify-center">
         <div className="">
           <div className="image-area image-area-1 mb-5 flex flex-col">
             <div className="text-overlay">
@@ -61,6 +63,27 @@ const Projects: React.FC = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="grid grid-cols-2 gap-5 items-center justify-center">
+        {projects.map((item) => (
+          <div key={item.id}>
+            <div
+              className={`image-area image-area-${item.id} mb-5 flex flex-col`}
+            >
+              <div className="text-overlay">
+                <p className={`${item.id == "3" ? "text-4xl" : "text-4xl"}`}>
+                  {item.name}
+                </p>
+                <div className="text-description font-semibold">
+                  <p>{item.smallDesc}</p>
+                </div>
+                <Link to={`/project/${item.id}`}>
+                  <button className="button-36">Learn More</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const Project = () => {
   return (
     <div className="py-40 px-96 text-darkpurple">
       <div className="flex flex-row ">
-        <div className="flex flex-row text-center items-center">
+        <div className="flex flex-row text-start items-center w-2/3">
           <div className="text-6xl font-bold mb-12">{project.name}</div>
           <div className="flex flex-col gap-4 text-xl">{project.year}</div>
         </div>
