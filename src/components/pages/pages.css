@@ -16,7 +16,29 @@
     }
 }
 
+.stacking-container {
+    position: relative;
+    /* height: calc(100vh * 4); */
+}
 
+.image {
+    
+    position: sticky;
+    top: 0;
+    height: 90vh;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img {
+    transition: transform 0.5s ease-out;
+    object-fit:contain;
+}
+.blur-overlay{
+    position: fixed;
+
+}
 .sec{
     width: 100%;
     height: 100vh;

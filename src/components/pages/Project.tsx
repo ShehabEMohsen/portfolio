@@ -3,6 +3,8 @@ import { projects } from "../data/projects";
 import { href, useParams } from "react-router-dom";
 import Tooltip from "../parts/Tooltip";
 import Github from "../../assets/github.svg";
+import Link from "../../assets/link.png";
+import Back from "../../assets/backArrow.png";
 
 const Project = () => {
   const { id } = useParams();
@@ -11,19 +13,24 @@ const Project = () => {
     return <p>Project not found</p>;
   }
   return (
-    <div className="py-40 px-96 text-darkpurple">
+    <div className="pt-20 pb-40 px-96 text-darkpurple">
+      <div className="mb-10 text-lg font-medium flex flex-row">
+        <a href="/" className="flex flex-row w-full items-center gap-2">
+          <img src={Back} className="w-4 h-4" /> Back{" "}
+        </a>
+      </div>
       <div className="flex flex-row ">
         <div className="flex flex-row text-start items-center w-2/3">
           <div className="text-6xl font-bold mb-12">{project.name}</div>
           <div className="flex flex-col gap-4 text-xl">{project.year}</div>
         </div>
-        <div className="flex flex-row h-8 ml-auto gap-2">
+        <div className="flex flex-row h-8 ml-auto gap-2 justify-center items-center">
           <a href={project.github} target="_blank">
-            <img src={Github} />
+            <img src={Github} className="w-10" />
           </a>
           {project.link != "" && (
             <a href={project.link} target="_blank">
-              <img src={Github} />
+              <img src={Link} className="w-8" />
             </a>
           )}
         </div>
@@ -55,12 +62,19 @@ const Project = () => {
           ))}
         </ul>
       </div>
-
-      {project.images.map((item, index) => (
-        <div className="images mb-2 rounded-lg overflow-hidden">
-          <img src={item} className="w-full" />
-        </div>
-      ))}
+      <div
+        className="stacking-container"
+        style={{ height: `calc(100vh * ${project.images.length});` }}
+      >
+        {project.images.map((item, index) => (
+          <div
+            className="image mb-2 rounded-lg overflow-hidden"
+            style={{ zIndex: index + 1 }}
+          >
+            <img src={item} className="w-full" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
