@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { projects } from "../data/projects";
 import { href, useParams } from "react-router-dom";
 import Tooltip from "../parts/Tooltip";
@@ -9,6 +9,12 @@ import Back from "../../assets/backArrow.png";
 const Project = () => {
   const { id } = useParams();
   const project = projects.find((p) => p.id === id);
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, []);
+
   if (!project) {
     return <p>Project not found</p>;
   }
