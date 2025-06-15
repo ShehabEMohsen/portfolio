@@ -7,7 +7,7 @@ import Spotify1 from '../../assets/spotify1.png'
 import Spotify2 from '../../assets/spotify2.png'
 import Spotify3 from '../../assets/spotify3.png'
 import Library1 from '../../assets/library1.png'
-import Library2 from '../../assets/library2.gif'
+import Library2 from '../../assets/DropDown.gif'
 import Library3 from '../../assets/library3.png'
 import Dashboard1 from '../../assets/Dashbard1.png'
 import Dashboard2 from '../../assets/Dashboard2.png'
@@ -76,7 +76,7 @@ export const projects = [
         role:libraryRole,
         link:"",
         github:"https://github.com/ShehabEMohsen/100days100project",
-        images:[Library3,Library1],
+        images:[Library3,Library1, Library2],
         smallDesc:"A collection of reusable and modern frontend components, that are updated regularly.",
     },
     {
