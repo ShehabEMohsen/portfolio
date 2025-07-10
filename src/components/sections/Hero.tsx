@@ -29,16 +29,10 @@ const Hero: React.FC = () => {
           <button
             className="button-35 mt-7 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
             role="button"
-            onClick={() => {
-              const link = document.createElement('a');
-              link.href = '../../assets/resume.pdf'; 
-              link.download = 'resume.pdf';
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
           >
-            My Resume
+            <a href="/resume.pdf" download="resume.pdf" className="w-full h-full">
+              My Resume
+            </a>
           </button>
         </div>
       </div>  
