@@ -13,6 +13,12 @@ import Dashboard1 from '../../assets/Dashbard1.png'
 import Dashboard2 from '../../assets/Dashboard2.png'
 import Dashboard3 from '../../assets/Dashboard3.png'
 import Dashboard4 from '../../assets/Dashboard4.png'
+import Campus1 from '../../assets/campus1.png'
+import Campus2 from '../../assets/campus2.png'
+import Campus3 from '../../assets/campus3.png'
+import Campus4 from '../../assets/campus4.png'
+import ReactAdmin from '../../assets/react-admin.png'
+import Next from '../../assets/Next.js.svg'
 
 
 const spotifyRole = [
@@ -38,9 +44,18 @@ const libraryRole = [
     "Occasionally update the library to enhance my skills and chalenge myself with new UI elements.",
 ]
 
-// const campusRole = [
-//     "",
-// ]
+const campusRole = [
+    "Designed and built the responsive landing page and LMS interface using React, Next.js, and Tailwind CSS.",
+    "Implemented dynamic cart functionality and integrated authentication flows.",
+    "Enhanced user experience with interactive components and ensured cross-browser compatibility.",
+    "Collaborated with cross-functional teams to ensure smooth integration of the LMS features.",
+    "Optimized performance to handle scaling user traffic.",
+    "Created a full-featured admin dashboard for instructors to manage courses, programs, and workshops.",
+    "Built the frontend using React and Tailwind CSS with a focus on simplicity and usability.",
+    "Integrated forms and validations for adding and updating course data.",
+    "Worked closely with backend APIs to handle secure data operations and content management.",
+    "Ensured the dashboard was responsive and user-friendly across devices."
+]
 
 export const projects = [
     {
@@ -82,13 +97,13 @@ export const projects = [
     {
         id:"4",
         name:"Campus51 Platform",
-        year:"2025",
-        tech:[{"React":React}, {"Tailwind CSS":Tailwind}, {"Typescript":TS}, {"Spotify API":Spotify}],
-        desc:"Vinyl Music Player is a creative and interactive music player designed to bring the nostalgic charm of vinyl records to your digital experience. With smooth animations, authentic sound effects, and a user-friendly interface, this project reimagines the classic vinyl experience for the modern era.",
-        role:["Lorem Ipsum", "lorem", "Lorem Ipsum", "lorem", "Lorem Ipsum", "lorem",],
-        link:"https://vinyl-player.netlify.app/",
-        github:"https://github.com/ShehabEMohsen/VinylMusicPlayer",
-        images:[Spotify1,Spotify2,Spotify3],
+        year:"2023-2025",
+        tech:[{"NextJS":Next}, {"Tailwind CSS":Tailwind}, {"Typescript":TS}, {"React Admin":ReactAdmin}],
+        desc: "A comprehensive learning platform featuring a public storefront, integrated LMS, and a dedicated admin dashboard for instructors. Built with React, Next.js, and Tailwind CSS, the platform delivers a seamless user experience with dynamic cart functionality, secure authentication, and responsive design. The admin dashboard empowers instructors to effortlessly create and manage courses, programs, and workshops, streamlining the content management process. Designed for scalability and maintainability, the platform ensures smooth interactions and consistent performance across devices.",
+        role:campusRole,
+        link:"https://www.campus51.com/",
+        // github:"https://github.com/ShehabEMohsen/VinylMusicPlayer",
+        images:[Campus1,Campus2,Campus3,Campus4],
         smallDesc:"An educational web application to sell courses and workshops with an LMS side to it.",
     },
 ]
