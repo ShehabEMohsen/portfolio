@@ -51,7 +51,7 @@ const campusRole = [
     "Collaborated with cross-functional teams to ensure smooth integration of the LMS features.",
     "Optimized performance to handle scaling user traffic.",
     "Created a full-featured admin dashboard for instructors to manage courses, programs, and workshops.",
-    "Built the frontend using React and Tailwind CSS with a focus on simplicity and usability.",
+    "Built the frontend using React-admin.",
     "Integrated forms and validations for adding and updating course data.",
     "Worked closely with backend APIs to handle secure data operations and content management.",
     "Ensured the dashboard was responsive and user-friendly across devices."
