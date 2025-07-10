@@ -52,9 +52,9 @@ const Navbar: React.FC = () => {
     }
   };
 
-  const handleLinkClick = (page: string) => {
-    setSelectedPage(page);
-  };
+  // const handleLinkClick = (page: string) => {
+  //   setSelectedPage(page);
+  // };
 
   const handleMouseEnter = (page: string) => {
     setHoveredPage(page);

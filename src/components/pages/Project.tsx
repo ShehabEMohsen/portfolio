@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { projects } from "../data/projects";
-import { href, useParams } from "react-router-dom";
+import {useParams } from "react-router-dom";
 import Tooltip from "../parts/Tooltip";
 import Github from "../../assets/github.svg";
 import Link from "../../assets/link.png";

@@ -6,7 +6,7 @@ type SkillsProps = {
   name: string;
 };
 
-const Project: React.FC<SkillsProps> = ({ photo, name }) => {
+const Project: React.FC<SkillsProps> = ({ photo }) => {
   return (
     <div className="container">
       <img src={photo} alt="photo" className="image" />

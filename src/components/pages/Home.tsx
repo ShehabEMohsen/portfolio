@@ -5,7 +5,7 @@ import SkillsSection from "../sections/SkillsSection";
 // import About from "../sections/About";
 import Projects from "../sections/Projects";
 import Contact from "../sections/Contact";
-import FadeInSection from "../parts/FadeInSection";
+// import FadeInSection from "../parts/FadeInSection";
 import "./pages.css";
 
 const Home: React.FC = () => {

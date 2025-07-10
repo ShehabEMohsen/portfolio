@@ -1,6 +1,6 @@
 import React from "react";
 import "./sections.css";
-import Suitcase from "../../assets/suitcase.png";
+// import Suitcase from "../../assets/suitcase.png";
 import { projects } from "../data/projects";
 import { Link } from "react-router-dom";
 

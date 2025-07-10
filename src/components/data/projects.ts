@@ -38,9 +38,9 @@ const libraryRole = [
     "Occasionally update the library to enhance my skills and chalenge myself with new UI elements.",
 ]
 
-const campusRole = [
-    "",
-]
+// const campusRole = [
+//     "",
+// ]
 
 export const projects = [
     {

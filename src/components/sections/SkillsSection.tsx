@@ -10,7 +10,7 @@ import Figma from "../../assets/figma.svg";
 import Vue from "../../assets/vue.svg";
 import Next from "../../assets/Next.js.svg";
 import Tailwind from "../../assets/Tailwind CSS.svg";
-import FadeInSection from "../parts/FadeInSection";
+// import FadeInSection from "../parts/FadeInSection";
 
 const SkillsSection: React.FC = () => {
   return (
