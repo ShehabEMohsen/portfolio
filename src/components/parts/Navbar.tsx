@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../../assets/logo.png";
+// import Logo from "../../assets/logo.png";
 
 const Navbar: React.FC = () => {
   const [selectedPage, setSelectedPage] = useState("Home");
@@ -75,9 +75,9 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className={`flex flex-row bg-background shadow-md fixed w-full z-50 transition-all duration-300 ${isHidden ? 'transform translate-y-[-100%]' : 'transform translate-y-0'}`}>
+    <div className={`flex flex-row bg-background shadow-md fixed w-full z-50 h-20 transition-all duration-300 ${isHidden ? 'transform translate-y-[-100%]' : 'transform translate-y-0'}`}>
       <div className="w-16 ml-20 mt-3">
-        <img src={Logo} />
+        {/* <img src={Logo} /> */}
       </div>
       <div className="flex w-5/6 flex-row justify-center">
         <div className="flex justify-between content-between w-96 mt-6">
